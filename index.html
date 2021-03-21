@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="title-display-container">
+            <h3>Todo App</h3>
+            <p>Developed by Manny Toledo Jr</p>
+        </div>
+        <div class="task-display-container">
+            <div class="task-display">
+                <h3>Task List</h3>
+                <ul class="tasks-container" id="tasksContainer">
+                </ul>
+                <form class="form" action="" id="addNewTaskForm">
+                    <input class="input-new-task" id="addNewTaskInput" type="text" placeholder="Add New Task" autocomplete="off" minlength="5" maxlength="15">
+                    <button class="btn-new-task">+</button>
+                </form>
+                <button class="delete-task" id="deleteTask">DELETE TASK</button>
+            </div>
+        </div>
+        
+        <div class="list-display-container" id="listDisplayContainer">
+            <div class="list-display">
+                <div class="list-display-header">
+                <h1 id="todoTitle">Exam</h1>
+                <span id="todosCount"></span>
+                </div>
+                <div class="list-display-body">
+                    <ul id="listTodos">
+                    </ul>
+                    <form class="form-todo" action="" id="addNewTodoForm">
+                        <input class="input-new-todo" id="addNewTodoInput" type="text" placeholder="Add New List" autocomplete="off" minlength="5" maxlength="20">
+                        <button class="btn-new-todo">+</button>
+                    </form>
+                    <button class="delete-todo" id="deleteTodo">DELETE COMPLETED TODO</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
